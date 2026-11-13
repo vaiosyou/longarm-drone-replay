@@ -1,0 +1,3 @@
+numpy>=1.21
+pymavlink>=2.4.40
+pillow>=9.0   # gsi_terrain.py only

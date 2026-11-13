@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "longarm-drone-replay: 3D replay of drone flight logs in Unity with long-arm tip visualisation"
+type: software
+authors:
+  - family-names: Utsumi
+    given-names: Sho
+    affiliation: "National Institute of Technology, Asahikawa College"
+version: v0.1.0
+date-released: 2026-11-13   # update to the release date
+# doi: 10.5281/zenodo.XXXXXXX   # add after the first Zenodo release (concept DOI)
+repository-code: "https://github.com/vaiosyou/longarm-drone-replay"
+license: MIT
+keywords:
+  - ArduPilot
+  - Hakoniwa
+  - Unity
+  - flight log replay
+  - aerial manipulator
+  - ROS
+  - multicopter

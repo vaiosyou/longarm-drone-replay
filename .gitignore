@@ -1,0 +1,35 @@
+# Flight logs and converted data (contain the flight location) - do not publish
+*.bin
+*.BIN
+*.tlog
+out/
+*_replay.json
+*_replay.csv
+flight_replay.json
+flight_replay.csv
+
+# GSI terrain output / tile cache
+gsi/
+_tile_cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Unity (if a project is placed here)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+*.csproj
+*.sln
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vs/
+.vscode/
+.idea/
