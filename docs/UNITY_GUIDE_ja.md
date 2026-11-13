@@ -201,7 +201,7 @@ Game ビューが狭いときは、パネル全体が自動で縮小される。
 | Cesium | Cesium for Unity で読み込む地形・航空写真・建物（Google Photorealistic 3D Tiles など） | インターネット接続、Cesium ion アカウント（無料枠あり） |
 | GSI | 国土地理院の標高タイルと航空写真から作った地形（建物の立体はない） | 事前に `gsi_terrain.py` を 1 回実行（ネット接続が必要なのはこのときだけ） |
 
-**Hide When Scenery On** には、景色を出しているときに隠したい床や障害物を入れる。
+**Hide When Scenery On** には、景色を出しているときに隠したい床や障害物を入れる。地面の格子（FlightReplayGrid）は、**Hide Grid When Scenery On**（初期値オン）により、景色の表示中は自動で隠れる。
 
 > **注意：カメラの入った親オブジェクトを入れない。** 入れたオブジェクトは丸ごと止まる（SetActive(false)）。箱庭のシーンでは `ENV` の中に Camera があるため、ENV を丸ごと入れると Game ビューに何も映らなくなり、追従カメラも止まる。ENV の中の Plane、Obstacle1、Obstacle2、AREA1〜6（必要なら Baggage）を個別に入れる。
 >

@@ -29,6 +29,8 @@ namespace FlightReplay
         public Mode mode = Mode.None;
         [Tooltip("Objects hidden while Cesium or GSI scenery is shown (e.g. the Hakoniwa ENV object)")]
         public GameObject[] hideWhenSceneryOn = new GameObject[0];
+        [Tooltip("Hide the FlightReplayGrid (ground grid and N/E labels) while Cesium or GSI scenery is shown")]
+        public bool hideGridWhenSceneryOn = true;
 
         [Header("Geo origin (default: meta.geo_origin of the replay JSON)")]
         public bool overrideGeoOrigin = false;
@@ -122,6 +124,8 @@ namespace FlightReplay
             _nextSnap = Time.time + 0.5f;
 
             foreach (var go in hideWhenSceneryOn) if (go != null) go.SetActive(mode == Mode.None);
+            var grid = GetComponent<FlightReplayGrid>();
+            if (grid != null) grid.SetVisible(mode == Mode.None || !hideGridWhenSceneryOn);
             if (cesiumGeoreference != null) cesiumGeoreference.SetActive(mode == Mode.Cesium);
             if (_gsiRoot != null) _gsiRoot.SetActive(mode == Mode.GSI);
 

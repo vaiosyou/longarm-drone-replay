@@ -20,8 +20,16 @@ namespace FlightReplay
         public float height = 0f;
 
         Transform _gridT;
+        bool _visible = true;
 
         void Start() { Build(); }
+
+        /// <summary>Show or hide the grid and its labels (used by FlightReplayEnvironment).</summary>
+        public void SetVisible(bool visible)
+        {
+            _visible = visible;
+            if (_gridT != null) _gridT.gameObject.SetActive(visible);
+        }
 
         public void Build()
         {
@@ -57,11 +65,12 @@ namespace FlightReplay
             go.AddComponent<MeshFilter>().sharedMesh = mesh;
             var mr = go.AddComponent<MeshRenderer>();
             mr.sharedMaterial = new Material(Shader.Find("Sprites/Default"));   // uses vertex colours
+            go.SetActive(_visible);
         }
 
         void OnGUI()
         {
-            if (!showLabels || _gridT == null) return;
+            if (!showLabels || !_visible || _gridT == null) return;
             var cam = Camera.main;
             if (cam == null) return;
             float r = halfSize;
