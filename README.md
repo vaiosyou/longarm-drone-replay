@@ -3,7 +3,7 @@
 **3D replay of drone flight logs in Unity: ArduPilot `.bin` or any CSV, any scene, any object, with optional long-arm tip visualisation.**
 ドローンのフライトログ（ArduPilot `.bin` または任意の CSV）を、Unity の任意のシーン・任意の物体で 3D リプレイ再生するツール。長尺アーム先端の表示にも対応。
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) <!-- replace after the first Zenodo release -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24188695.svg)](https://doi.org/10.5281/zenodo.24188695)
 
 ---
 
@@ -282,17 +282,17 @@ The Hakoniwa core, SITL and the web server do not need to be running. See sectio
 
 ## Citation / 引用
 
-If you use this software, please cite it. Replace the placeholders after the first Zenodo release (see also `CITATION.cff`).
+If you use this software, please cite it (see also `CITATION.cff`). The DOI below always resolves to the latest version.
 
 ```bibtex
-@software{utsumi_longarm_drone_replay,
-  author    = {Utsumi, Sho},
+@software{uchiumi_longarm_drone_replay,
+  author    = {Uchiumi, Sho},
   title     = {longarm-drone-replay: 3D replay of drone flight logs in Unity with long-arm tip visualisation},
   year      = {2026},
-  version   = {v0.1.0},
+  version   = {v0.1.1},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.XXXXXXX},
-  url       = {https://doi.org/10.5281/zenodo.XXXXXXX}
+  doi       = {10.5281/zenodo.24188695},
+  url       = {https://doi.org/10.5281/zenodo.24188695}
 }
 ```
 
